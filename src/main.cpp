@@ -76,9 +76,9 @@ void autonomous() {}
 void opcontrol() {
 	pros::Controller master(pros::E_CONTROLLER_MASTER);
 	pros::Motor mDFL(11);
-	pros::Motor mDFR(12);
+	pros::Motor mDFR(12, true);
 	pros::Motor mDBL(13);
-	pros::Motor mDBR(14);
+	pros::Motor mDBR(14, true);
 
 	while (true) {
 		pros::lcd::print(0, "%d %d %d", (pros::lcd::read_buttons() & LCD_BTN_LEFT) >> 2,
