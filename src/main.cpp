@@ -87,10 +87,10 @@ void opcontrol() {
 		int left = master.get_analog(ANALOG_LEFT_Y);
 		int right = master.get_analog(ANALOG_RIGHT_Y);
 
-		mDFL = left;
-		mDBL = left;
-		mDFR = right;
-		mDFR = right;
+		mDFL.move(left);
+		mDBL.move(left);
+		mDFR.move(right);
+		mDFR.move(right);
 
 		pros::delay(20);
 	}
