@@ -96,9 +96,9 @@ void opcontrol() {
 		mDFLout.move(left);
 		mDBLout.move(left);
 		mDFRin.move(right);
-		mDFRin.move(right);
+		mDBRin.move(right);
 		mDFRout.move(right);
-		mDFRout.move(right);
+		mDBRout.move(right);
 
 		pros::delay(20);
 	}
